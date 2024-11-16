@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bc_praktikum">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="24sp"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/et_un"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="username"/>
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin : "/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/rb_pria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pria"/>
+
+        <RadioButton
+            android:id="@+id/rb_wnta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wanita"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hobby : "/>
+
+    <CheckBox
+        android:id="@+id/cb_membaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Membaca">
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/cb_menulis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menulis">
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/cb_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bermain">
+    </CheckBox>
+
+    <ImageButton
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/register"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="Rizqi Abdillah 202231508"
+        android:textColor="#800080"/>
+</LinearLayout>
